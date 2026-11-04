@@ -23,35 +23,6 @@ En PowerShell, abre la carpeta `ejercicio6` y ejecuta:
 .\probar.bat
 ```
 
-También puedes ejecutar el JAR incluido con Java 17 o superior:
-
-```powershell
-java -Dfile.encoding=UTF-8 -jar integraciones.jar
-java -Dfile.encoding=UTF-8 -jar integraciones.jar --gui
-```
-
-Si modificas las fuentes, vuelve a compilar; el JAR incluido representa la versión
-entregada. En un entorno sin pantalla, `--gui` informa la situación y abre consola.
-
-## Compilación manual y IDE
-
-Desde la raíz del proyecto (la carpeta que contiene `fuentes.txt`):
-
-```text
-javac -encoding UTF-8 --release 17 -d out @fuentes.txt
-java -Dfile.encoding=UTF-8 -cp out vista.Principal
-java -Dfile.encoding=UTF-8 -cp out vista.Principal --gui
-```
-
-En PowerShell, si introduces el comando `javac` directamente, pasa el argumento
-del archivo entre comillas: `javac -encoding UTF-8 --release 17 -d out "@fuentes.txt"`.
-El script `.bat` ya se ocupa de esto al ejecutarse en CMD.
-
-En Linux/macOS: `bash ejecutar.sh` o `bash ejecutar.sh --gui`.
-En IntelliJ/Eclipse, crea un proyecto Java 17 y marca `src` como carpeta de fuentes.
-En VS Code, abre esta carpeta con las extensiones de Java. Ejecuta
-`src/vista/Principal.java`; su nombre completo es `vista.Principal`.
-
 ## Estructura
 
 | Ruta | Contenido |
