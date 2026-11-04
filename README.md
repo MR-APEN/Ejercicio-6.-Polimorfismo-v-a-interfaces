@@ -22,21 +22,3 @@ En PowerShell, abre la carpeta `ejercicio6` y ejecuta:
 # Compilación con advertencias y pruebas automáticas.
 .\probar.bat
 ```
-
-## Estructura
-
-| Ruta | Contenido |
-|---|---|
-| `src/modelo/` | Entidades, contratos, catálogo, motor y carga inicial |
-| `src/controlador/` | Coordinación de casos de uso y auditoría |
-| `src/vista/Principal.java` | Driver, menú de consola, Swing y toda la E/S |
-| `test/pruebas/PruebasSistema.java` | Pruebas de comportamiento sin dependencias |
-| `docs/Analisis_diseno.pdf` | Análisis, diseño, UML, trazabilidad y pruebas |
-| `docs/UML.puml` | Diagrama de clases editable en PlantUML |
-| `docs/DISENO.txt` | Decisiones fijadas antes de implementar |
-| `docs/VERIFICACION.txt` | Resultados y límites de la verificación realizada |
-| `fuentes.txt` | Rutas explícitas para compilar las 18 unidades Java de producción |
-
-El ordenamiento modifica la misma lista; continúa vigente al volver a listar.
-La búsqueda admite mayúsculas/minúsculas y espacios exteriores.
-Los montos admiten punto o coma decimal, hasta dos decimales y sin separador de miles.
